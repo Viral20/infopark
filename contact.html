@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Contact - Info Park</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	  <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    .button {
+           background-color: #6E6A67;  
+           border-radius: 5px;
+           color: #FFFFFF;
+           padding: .5em;
+           text-decoration: none;
+        }
+
+.topnav .w3-bar a.active {
+
+   background-color: #0A0A0A;
+   color: #0A0A0A;
+}
+
+.w3-bar .w3-button {
+    
+    white-space:normal;
+}
+
+.w3-bar .w3-bar-item{
+
+      padding:8px 16px;
+      float : left;
+      width : auto;
+      border: none;
+      outline: none;
+      display: block;
+}	
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 50;
+  border: none;
+  outline: none;
+  background-color: #F1EFEE;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#myBtn:hover {
+  background-color: #B7B7B7;
+}
+
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 61px;
+    width: 60px;
+    border-radius: 60%;
+}
+.chip:hover { background-color:#B7B7B7;
+}
+	
+</style>
+</head>
+
+<body>
+
+    <div class="brand">Info Park</div>
+    <div class="address-bar">20 Raffel Tower | Saket , Indore (M.P.) 452001 | India</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Info Park</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Project Layout</a>
+                    </li>
+                    <li class="w3-bar-item w3-button active">
+                        <a href="contact.html" >Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center"><strong>Route To
+                        Info Park</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-8">
+                    <div id="map"></div>
+     <script>
+      function initMap() {
+        var uluru = {lat:22.716231, lng: 75.907404};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4f1-OzVEMjtaRXnMBuy_4pV0YSl1y7W8&callback=initMap">
+    </script>                </div>
+                <div class="col-md-4">
+				<p> Site Manager :</b>
+                        <div class="chip">
+                                 <img src="cu1.jpg" alt="Person" width="96" height="96">
+                                         <strong>Viral Dhanote</strong>
+                         </div>
+                    </p>
+					<br>
+                    <p>Phone :
+                        <strong>(+91)8989464352</strong>
+                    </p>
+					<br>
+                    <p>Email :
+                        <strong><a href="mailto:vrldhanote65@gmail.com">vrldhanote65@gmail.com</a></strong>
+                    </p>
+					<br>
+                    <p>Address :
+                        <strong>66 Uttkarsh Estate,<br>
+                                 Bengali Square, Indore (M.P.)</strong>
+                    </p>
+					<br>
+					<p> Visiting Hour's :
+                        <strong> 10:00 AM - 07:OO PM</strong>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Inquiry
+                        <strong>form</strong>
+                    </h2>
+                    <hr>
+                    <p> You can submit any of your queries through this form, you can also allot us the time of visiting the site according to your convenience through this form.</p>
+				
+                    <form role="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label>Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group col-lg-12">
+                                <label>Message</label>
+                                <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <a href="rs.html" class="button">Submit</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+                  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>&copy; DV World Project 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
